@@ -12,7 +12,7 @@ const getRandomNumber = (min, max) => {
 
 
 const processOfTheGame = () => {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i += 1) {
         const numberforUser = getRandomNumber(1, 100)
         console.log(`Question: ${numberforUser}`)
         const userAnswer = readlineSync.question('Your answer: ')
