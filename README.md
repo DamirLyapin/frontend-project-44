@@ -3,3 +3,7 @@
 https://asciinema.org/a/9V2J7WuKwAt44Gq5YJzVrD4wF
 process of brain-calc:
 https://asciinema.org/connect/eddd3ded-68ec-4e6f-86a4-dfb231fc809e
+process of brain-gcd:
+https://asciinema.org/connect/eddd3ded-68ec-4e6f-86a4-dfb231fc809e
+process of the brain-progression:
+https://asciinema.org/connect/eddd3ded-68ec-4e6f-86a4-dfb231fc809e

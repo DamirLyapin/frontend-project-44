@@ -1,0 +1,6 @@
+{"version": 2, "width": 120, "height": 30, "timestamp": 1759231665, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.579731, "o", "No version is set for command npm\r\nConsider adding one of the following versions in your config file at \r\n"]
+[0.582403, "o", "nodejs 24.8.0\r\n"]
+[0.590291, "o", "nvm is not compatible with the npm config \"prefix\" option: currently set to \"\"\r\n"]
+[0.590539, "o", "Run `npm config delete prefix` or `nvm use --delete-prefix v24.8.0 --silent` to unset it.\r\n"]
+[0.592377, "o", "\u001b[?2004h\u001b]0;igabyte@DESKTOP-D62GR94: ~/first-hexlet-project/frontend-project-44\u0007\u001b[01;32migabyte@DESKTOP-D62GR94\u001b[00m:\u001b[01;34m~/first-hexlet-project/frontend-project-44\u001b[00m$ "]
