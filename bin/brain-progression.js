@@ -40,7 +40,7 @@ const processOfTheGame = () => {
         } else {
             console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
             console.log(`Let's try again, ${userName}!`)
-            j = 2
+            return
         }
     }
 }

@@ -7,3 +7,5 @@ process of brain-gcd:
 https://asciinema.org/connect/eddd3ded-68ec-4e6f-86a4-dfb231fc809e
 process of the brain-progression:
 https://asciinema.org/connect/eddd3ded-68ec-4e6f-86a4-dfb231fc809e
+process of the brain-prime:
+https://asciinema.org/connect/eddd3ded-68ec-4e6f-86a4-dfb231fc809e
