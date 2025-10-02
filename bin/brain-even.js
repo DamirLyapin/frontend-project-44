@@ -12,30 +12,25 @@ const getRandomNumber = (min, max) => {
 
 
 const processOfTheGame = () => {
+    let correctAnswer
+    let userAnswer
     for (let i = 0; i < 3; i += 1) {
-        const numberforUser = getRandomNumber(1, 100)
-        console.log(`Question: ${numberforUser}`)
-        const userAnswer = readlineSync.question('Your answer: ')
-        if ((isEven(numberforUser) === true) && (userAnswer === 'yes') && (i !== 2)){
-            console.log('Correct')
-        } else if ((isEven(numberforUser) === false) && (userAnswer === 'no') && (i !== 2)){
-            console.log('Correct')
-        } else if ((isEven(numberforUser) === true) && (userAnswer !== 'yes')) {
-            console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.`)
+        const numberForUser = getRandomNumber(1, 100) 
+        if (isEven(numberForUser)) correctAnswer = 'yes'
+        else correctAnswer = 'no'
+        console.log(`Question: ${numberForUser}`)
+        userAnswer = readlineSync.question('Your answer: ')
+        if (userAnswer === correctAnswer) {
+            console.log('Correct!')
+            if (i === 2) {
+                console.log(`Congralutations, ${userName}`)
+            }
+        } else {
+            console.log(`${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
             console.log(`Let's try again, ${userName}!`)
-            i = 2
-        } else if ((isEven(numberforUser) === false) && (userAnswer !== 'no')) {
-            console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'.`)
-            console.log(`Let's try again, ${userName}!`)
-            i = 2
-        } else if ((isEven(numberforUser) === false) && (userAnswer === 'no') && (i === 2)){
-            console.log('Correct')
-            console.log(`Congratulations, ${userName}!`)
-        } else if ((isEven(numberforUser) === true) && (userAnswer === 'yes') && (i === 2)){
-            console.log('Correct')
-            console.log(`Congratulations, ${userName}!`)
+            return
         }
-    } 
+    }
 }
 console.log('Welcome to the Brain Games!')
 const userName = readlineSync.question('May I have your name?: ')
