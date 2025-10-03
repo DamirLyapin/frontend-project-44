@@ -14,22 +14,22 @@ const processOfTheGame = () => {
         let correctAnswer
         switch(operation) {
             case '+':
-                const number1Sum = getRandomNumber(1, 100)
-                const number2Sum = getRandomNumber(1, 100)
+                var number1Sum = getRandomNumber(1, 100)
+                var number2Sum = getRandomNumber(1, 100)
                 console.log(`Question: ${number1Sum} + ${number2Sum}`)
                 userAnswer = Number(readlineSync.question('Your answer: '))
                 correctAnswer = number1Sum + number2Sum
                 break
             case '-':
-                const number1Dif = getRandomNumber(1, 100)
-                const number2Dif = getRandomNumber(1, 100)
+                var number1Dif = getRandomNumber(1, 100)
+                var number2Dif = getRandomNumber(1, 100)
                 console.log(`Question: ${number1Dif} - ${number2Dif}`)
                 userAnswer = Number(readlineSync.question('Your answer: '))
                 correctAnswer = number1Dif - number2Dif
                 break
             case '*':
-                const number1Ulti = getRandomNumber(1, 10)
-                const number2Ulti = getRandomNumber(1, 10)
+                var number1Ulti = getRandomNumber(1, 10)
+                var number2Ulti = getRandomNumber(1, 10)
                 console.log(`Question: ${number1Ulti} * ${number2Ulti}`)
                 userAnswer = Number(readlineSync.question('Your answer: '))
                 correctAnswer = number1Ulti * number2Ulti
