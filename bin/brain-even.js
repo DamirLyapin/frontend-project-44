@@ -23,7 +23,7 @@ const processOfTheGame = () => {
         if (userAnswer === correctAnswer) {
             console.log('Correct!')
             if (i === 2) {
-                console.log(`Congralutations, ${userName}`)
+                console.log(`Congratutations, ${userName}`)
             }
         } else {
             console.log(`${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
