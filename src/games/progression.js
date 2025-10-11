@@ -22,8 +22,8 @@ const generateProgression = () => {
     const step = getRandomNumber(0, 9)
     for (let i = 0; i < getRandomNumberWithPriority(10); i += 1) {
         result.push((start + i * step).toString())
+    }
     return result
-}
 }
 
 const generateRound = () => {
@@ -38,6 +38,6 @@ const generateRound = () => {
     }
 }
 
-export const startProgressiongame = () => {
+export const startProgressionGame = () => {
     return runGameEngine(gameRules, generateRound)
 }
