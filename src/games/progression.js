@@ -30,10 +30,10 @@ const generateRound = () => {
     const index = getRandomNumber(0, 9)
     let question = generateProgression()
     const correctAnswer = question[index]
-    question.splice(index, 1, '...')
+    question.splice(index, 1, '..')
 
     return {
-        question: question,
+        question: question.join(" "),
         correctAnswer: correctAnswer
     }
 }
