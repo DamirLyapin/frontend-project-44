@@ -1,6 +1,7 @@
 import { runGameEngine } from '../engine/gameEngine.js'
 
 const isPrime = (number) => {
+  if (number === 1) return false
   if (number <= 2) return true
   else if (number % 2 === 0) return false
   else {
