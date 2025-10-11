@@ -27,8 +27,8 @@ const generateProgression = () => {
 }
 
 const generateRound = () => {
-    const index = getRandomNumber(0, question[length - 1])
     let question = generateProgression()
+    const index = getRandomNumber(0, question.length - 1)
     const correctAnswer = question[index]
     question.splice(index, 1, '..')
 
