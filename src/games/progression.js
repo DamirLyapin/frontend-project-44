@@ -19,7 +19,7 @@ const getRandomNumberWithPriority = (recommended) => {
 const generateProgression = () => {
     let result = [];
     const start = getRandomNumber(0, 9)
-    const step = getRandomNumber(0, 9)
+    const step = getRandomNumber(1, 9)
     for (let i = 0; i < getRandomNumberWithPriority(10); i += 1) {
         result.push((start + i * step).toString())
     }
@@ -27,7 +27,7 @@ const generateProgression = () => {
 }
 
 const generateRound = () => {
-    const index = getRandomNumber(0, 9)
+    const index = getRandomNumber(0, question[length - 1])
     let question = generateProgression()
     const correctAnswer = question[index]
     question.splice(index, 1, '..')
