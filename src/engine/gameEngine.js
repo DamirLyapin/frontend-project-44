@@ -14,7 +14,7 @@ export const runGameEngine = (gameRules, generateRound) => {
       if (i === 2) {
         console.log(`Congratulations, ${userName}!`)
       }
-    } 
+    }
     else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${userName}!`)
