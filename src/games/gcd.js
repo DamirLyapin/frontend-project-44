@@ -10,7 +10,6 @@ const gcd = (a, b) => {
   return a
 }
 
-
 const getRandomNumber = (min, max) => {
   min = Math.ceil(min)
   max = Math.floor(max)
